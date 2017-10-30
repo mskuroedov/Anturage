@@ -74,14 +74,14 @@ button{
     padding-bottom: 150px;
 }
 .header_promo__block{
-    padding: 54px 60px 55px 56px;
+    padding: 54px 54px 55px 70px;
     opacity: 0.9;
     background-color: #818993;
     color: white;
 }
 .header_promo__block h1{
    font-family: Circe-bold;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 1.05;
     letter-spacing: -0.2px;
@@ -268,7 +268,7 @@ button{
     text-align: center;
 }
 .footer{
-    padding: 48px 50px 78px 100px;
+    padding: 48px 50px 78px 74px;
     color: white;
     background-color: #8c949e;
 }
@@ -701,13 +701,27 @@ button{
     font-style: normal;
     font-weight: normal;
 }
-@media (max-width: 540px) {
+
+
+
+@media (max-width: 545px) {
+    .telephone{
+        flex: inherit;
+        text-align: center;
+    }
     .header_nav ul{
         margin-top: 0;
     }
     .header_promo{
         padding: 0;
         text-align: center;
+    }
+    .caption{
+        padding-top:30px;
+        padding-bottom: 20px;
+    }
+    .caption button{
+        margin-top: 5px;
     }
     .header_promo__block p{
         text-align: center;
@@ -717,8 +731,12 @@ button{
     }
     .second_main_section{
         text-align: center;
-        padding-left: 29%;
-        padding-right: 29%;
+        padding-left: 29% ;
+        padding-right: 29% ;
+    }
+    .third_main_section{
+        padding-left: 145px;
+        padding-right: 135px;
     }
     .mobile-centered *{
         text-align: center !important;
@@ -735,20 +753,20 @@ button{
         margin:auto;
     }
     .fourth_main_section{
-        padding-left:20%;
+        padding-left:25%;
         padding-right:20%;
     }
     #slider{
-        margin-left: -100px;
-        margin-right: -114px;
+        margin-left: -145px;
+        margin-right: -150px;
     }
     .associate_main_section *{
         text-align: center !important;
     }
     .short_about{
         padding-top:39px;
-        padding-left:130px;
-        padding-right:130px;
+        padding-left: 80px;
+        padding-right: 70px;
     }
     .calculator_section{
         /*margin-left: -48%;*/
@@ -756,6 +774,8 @@ button{
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 40px;
+        margin-right: -25%;
+        margin-left: -20%;
     }
     .price_section{
         background: inherit;
@@ -775,3 +795,91 @@ button{
         width: 100%;
     }
 }
+
+@media (max-width: 400px) {
+    #slider{
+        margin-left: -19%;
+        margin-right: -15%;
+    }
+    .caption{
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .second_main_section{
+        padding: 20px !important;
+    }
+
+    .header_nav ul{
+        margin-top: 0;
+    }
+    .header_promo{
+        padding: 0;
+        text-align: center;
+    }
+    .header_promo__block p{
+        text-align: center;
+    }
+    .second_main_section *{
+        text-align: center;
+    }
+    .second_main_section{
+        text-align: center;
+        padding-left: 20px ;
+        padding-right: 20px ;
+    }
+    .third_main_section{    padding-right: 20px;
+        padding-left: 45px;
+    }
+    .fourth_main_section{
+        padding: 15px !important;
+        padding-top: 40px !important;
+        padding-left: 27px !important;
+    }
+    .mobile-centered *{
+        text-align: center !important;
+    }
+    .mobile-centered img{
+        display: block;
+        margin:auto;
+    }
+    .third_main_section div{
+        margin-bottom: 20px;
+    }
+    .mobile-centered button{
+        display: block;
+        margin:auto;
+    }
+    .associate_main_section{
+        padding-top: 30px;
+        padding-left: 12px;
+        padding-bottom: 40px;
+    }
+    .associate_main_section *{
+        text-align: center !important;
+    }
+    .short_about{
+        padding:30px !important;
+    }
+    .calculator_section{
+        margin-left: -26%;
+        margin-right: -25%;
+    }
+    .price_section{
+        background: inherit;
+        box-shadow: none;
+    }
+    .price_section button{
+        display: block;
+        margin:auto;
+    }
+    .calculator_header_option{
+        /*text-align: left !important;*/
+    }
+    .calculator_option{
+        /*text-align: left !important;*/
+    }
+    .flex-wrap{
+        width: 100%;
+    }
+}
+
