@@ -40,6 +40,8 @@ button.close{
     width: 285px;
     height: 444px;
     text-align: center;
+    margin: auto;
+    margin-top: 15%;
 }
 .modal-body{
     padding: 40px 15px 30px;
@@ -784,7 +786,9 @@ button.close{
 .footer label {
     font-family: Circe-light;
 }
-.footer_btn{
+.footer_btn,
+.footer_btn:hover,
+.footer_btn:active{
     font-size: 0.9vw;
 }
 .h32 {
@@ -886,6 +890,11 @@ button.close{
 }
 
 @media (max-width: 1199px) {
+    .app-send-desktop{
+        float: none;
+        margin-top: -15px;
+        margin-bottom: -25px;
+    }
     .step_circle:after {
         width: 13.1vw;
     }
