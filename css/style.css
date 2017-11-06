@@ -784,7 +784,9 @@ button.close{
 .footer label {
     font-family: Circe-light;
 }
-
+.footer_btn{
+    font-size: 0.9vw;
+}
 .h32 {
     font-family: Circe-bold;
     font-size: 32px;
@@ -906,7 +908,8 @@ button.close{
         padding: 20px;
     }
     .h22{
-        white-space: nowrap;
+        font-size: 2.7vw;
+        line-height:1.2;
     }
     .price_section{
         padding: 30px 30px 30px 30px;
@@ -915,8 +918,44 @@ button.close{
     }
 
 }
+@media (max-width: 900px){
+    .calc_parametrs{
 
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .price_section{
+
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 780px) {
+    .h30{
+        font-size: 2.7vw;
+    }
+    .caption{
+
+        padding: 0;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 @media (max-width: 545px) {
+    .h30{
+        font-size: 5vw;
+    }
+    .image_block .h32 {
+        font-size: 6vw;
+    }
+    .footer_info{
+        font-size:5vw;
+    }
+    .footer_btn{
+        font-size: 3vw;
+    }
     .telephone {
         flex: inherit;
         text-align: center;
@@ -983,8 +1022,8 @@ button.close{
     }
 
     #slider {
-        margin-left: -145px;
-        margin-right: -150px;
+        margin-left: -16%;
+        margin-right: -21%;
     }
 
     .associate_main_section * {
