@@ -18,6 +18,7 @@
     <!-- Include Date Range Picker -->
     <link href="css/nouislider.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightgallery.min.css">
     <link type="text/css" rel="stylesheet" href="css/lightslider.css"/>
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/foxhover.css">
@@ -34,25 +35,26 @@
                     </button>
                     <h6 class="modal-head">заказать звонок</h6>
                     <p>Заполните форму и наш специалист свяжется с вами в ближайшее время.</p>
+                    <form class="modal-form">
                     <div class="row" style="margin-left: -15px;">
                         <div class="col-12">
-                            <input class=" basic_input" type="text" placeholder="Имя"/>
+                            <input class=" basic_input" type="text" placeholder="Имя" required/>
                         </div>
                         <div class="col-12">
-                            <input class=" basic_input" type="text" placeholder="Телефон"/>
+                            <input class=" basic_input tel-input" type="text"  data-inputmask="'mask': '+9 (999) 999-99-99'" placeholder="Телефон" required/>
                         </div>
                         <div class="col-12">
-                            <button class=" btn-outlined w-100 zayavka">Оставить заявку</button>
+                            <button class=" btn-outlined w-100 zayavka" type="submit">Оставить заявку</button>
                         </div>
                         <div class="col-12 d-none">
                             <span class="modal_success-app">Заявка отправлена.</span>
                         </div>
                     </div>
                     <label class="checking" for="agreement1m">
-                        <input id="agreement1m" type="checkbox" hidden>
-                        <span></span>
+                        <input id="agreement1m" type="checkbox" required>
                         Я даю свое согласие на обработку данных, согласно <a href="Политика%20конфиденциальности.pdf" class="confidetial">политике конфиденциальности</a>.
                     </label>
+                    </form>
                 </div>
             </div>
         </div>
@@ -63,27 +65,31 @@
         <div class="modal-content">
             <div class="modal-body">
                 <div class="col-12 ">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h6 class="modal-head">УЗНАТЬ ПОДРОБНЕЕ</h6>
                     <p>Наш специалист свяжется с вами и проконсультирует по всем вопросам. </p>
+                    <form class="modal-form">
                     <div class="row" style="margin-left: -15px;">
                         <div class="col-12">
-                            <input class=" basic_input" type="text" placeholder="Имя"/>
+                            <input class=" basic_input" type="text" placeholder="Имя" required/>
                         </div>
                         <div class="col-12">
-                            <input class=" basic_input" type="text" placeholder="Телефон"/>
+                            <input class=" basic_input tel-input" type="text" data-inputmask="'mask': '+9 (999) 999-99-99'" placeholder="Телефон" required/>
                         </div>
                         <div class="col-12">
-                            <button class=" btn-outlined w-100 zayavka">Оставить заявку</button>
+                            <button class=" btn-outlined w-100 zayavka" type="submit">Оставить заявку</button>
                         </div>
-                        <div class="col-12">
-                            <span class="modal_success-app">Заявка отправлена.</span>
+                        <div class="col-12 d-none">
+                            <span class="modal_success-app" >Заявка отправлена.</span>
                         </div>
                     </div>
                     <label class="checking" for="agreement2m" style="margin-top: 0">
-                        <input id="agreement2m" type="checkbox" hidden>
-                        <span></span>
+                        <input id="agreement2m" type="checkbox">
                         Я даю свое согласие на обработку данных, согласно <a href="Политика%20конфиденциальности.pdf" class="confidetial">политике конфиденциальности</a>.
                     </label>
+                    </form>
                 </div>
             </div>
         </div>
@@ -95,27 +101,32 @@
 
             <div class="modal-body">
                 <div class="col-12 ">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h6 class="modal-head">ОСТАВИТЬ ЗАЯВКУ</h6>
                     <p>Заполните форму и наш специалист свяжется с вами в ближайшее время.</p>
+                    <form class="modal-form">
                     <div class="row" style="margin-left: -15px;">
                         <div class="col-12">
-                            <input class=" basic_input" type="text" placeholder="Имя"/>
+                            <input class=" basic_input" type="text" placeholder="Имя" required/>
                         </div>
                         <div class="col-12">
-                            <input class=" basic_input" type="text" placeholder="Телефон"/>
+                            <input class=" basic_input tel-input" type="text" data-inputmask="'mask': '+9 (999) 999-99-99'" placeholder="Телефон" required/>
                         </div>
                         <div class="col-12">
-                            <button class=" btn-outlined w-100 zayavka">Оставить заявку</button>
+                            <button class=" btn-outlined w-100 zayavka" type="submit">Оставить заявку</button>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 d-none">
                             <span class="modal_success-app">Заявка отправлена.</span>
                         </div>
                     </div>
                     <label class="checking" for="agreement3m">
-                        <input id="agreement3m" type="checkbox" hidden>
-                        <span></span>
+                        <input id="agreement3m" type="checkbox" required>
                         Я даю свое согласие на обработку данных, согласно <a href="Политика%20конфиденциальности.pdf" class="confidetial">политике конфиденциальности</a>.
                     </label>
+                    </form>
                 </div>
             </div>
         </div>
@@ -127,27 +138,32 @@
 
             <div class="modal-body">
                 <div class="col-12 ">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h6 class="modal-head">ЗАКАЗАТЬ ЗВОНОК</h6>
                     <p>Я перезвоню вам в ближайшее время и с радостью отвечу на все вопросы.</p>
+                    <form class="modal-form">
                     <div class="row" style="margin-left: -15px;">
                         <div class="col-12">
-                            <input class=" basic_input" type="text" placeholder="Имя"/>
+                            <input class=" basic_input" type="text" placeholder="Имя" required/>
                         </div>
                         <div class="col-12">
-                            <input class=" basic_input" type="text" placeholder="Телефон"/>
+                            <input class=" basic_input tel-input" type="text" placeholder="Телефон" data-inputmask="'mask': '+9 (999) 999-99-99'" required/>
                         </div>
                         <div class="col-12">
-                            <button class=" btn-outlined w-100 zayavka">Оставить заявку</button>
+                            <button class=" btn-outlined w-100 zayavka" type="submit">Оставить заявку</button>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 d-none">
                             <span class="modal_success-app">Заявка отправлена.</span>
                         </div>
                     </div>
                     <label class="checking" for="agreement4m">
-                        <input id="agreement4m" type="checkbox" hidden>
-                        <span></span>
+                        <input id="agreement4m" type="checkbox" required>
                         Я даю свое согласие на обработку данных, согласно <a href="Политика%20конфиденциальности.pdf" class="confidetial">политике конфиденциальности</a>.
                     </label>
+                    </form>
                 </div>
             </div>
         </div>
@@ -197,7 +213,6 @@
     </div>
 
 </div>
-
 <div class="row" style="margin-right: 0">
     <!--promo-->
     <div class="col-12 header_promo">
@@ -224,12 +239,13 @@
             <div class="col-1"></div>
             <div class="col-12 col-md-7">
                 <p>Наш специалист приедет к вам в удобное время с большим набором образцов.</p>
+                <form id="first_section_valid">
                 <div class="row" style="margin-left: -15px;">
                     <div class="col-12 col-md-6 col-xl-4">
-                        <input class=" basic_input" type="text" placeholder="Имя"/>
+                        <input class=" basic_input" type="text" placeholder="Имя" required/>
                     </div>
                     <div class="col-12 col-md-6 col-xl-4">
-                        <input class=" basic_input" type="text" placeholder="Телефон"/>
+                        <input class=" basic_input tel-input" type="text" data-inputmask="'mask': '+9 (999) 999-99-99'" placeholder="Телефон" required/>
                     </div>
                     <div class="col-12 col-md-6 col-xl-4 app-btn">
                         <button class=" btn-outlined w-100 zayavka">Оставить заявку</button>
@@ -239,10 +255,10 @@
                     </div>
                 </div>
                 <label class="checking" for="agreement112">
-                    <input id="agreement112" type="checkbox" hidden>
-                    <span></span>
+                    <input id="agreement112" type="checkbox" required>
                     Я даю свое согласие на обработку данных, согласно <a href="Политика%20конфиденциальности.pdf" class="confidetial">политике конфиденциальности</a>.
                 </label>
+                </form>
             </div>
         </div>
     </div>
@@ -288,7 +304,7 @@
         </div>
     </div>
     <!--categories-->
-    <div class="col-12 col-md-11 mx-auto fourth_main_section">
+    <div class="col-12 col-md-12 mx-auto fourth_main_section">
         <div class="row" id="categories_row">
             <div class="col-12 col-md-8 col-xl-4 mx-auto">
                 <h2 class="h32 t-c">У нас вы можете заказать</h2>
@@ -296,57 +312,57 @@
                     по индивидуальным размерам</p>
             </div>
             <div class="w-100" style="margin-bottom: 20px"></div>
-            <div class="col-12 col-md-4 image_block effect eff-1">
+            <div class="col-12 col-md-4 image_block effect eff-9">
                 <p class="h32">ШТОРЫ</p>
                 <div class="caption">
                     <p>Мы профессионально шьем шторы на заказ в самых разных стилях. В вашем распоряжении огромный выбор
                         тканей, поэтому вы всегда подберете для себя нужный вариант. </p>
-                    <button class="btn-outlined">ПОДБРОБНЕЕ</button>
+                    <button class="btn-outlined" data-target="#moreModal" data-toggle="modal">ПОДБРОБНЕЕ</button>
                 </div>
             </div>
-            <div class="col-12 col-md-4 image_block effect eff-1">
+            <div class="col-12 col-md-4 image_block effect eff-9">
                 <p class="h32">РИМСКИЕ <br>
                     ШТОРЫ</p>
                 <div class="caption">
                     <p>Изготавливаются строго по вашим размерам из плотных тканей, которые хорошо защищают от света. Мы
                         используем только качественные механизмы подъема и спуска.</p>
-                    <button class="btn-outlined">ПОДБРОБНЕЕ</button>
+                    <button class="btn-outlined" data-target="#moreModal" data-toggle="modal">ПОДБРОБНЕЕ</button>
                 </div>
             </div>
-            <div class="col-12 col-md-4 image_block effect eff-1">
+            <div class="col-12 col-md-4 image_block effect eff-9">
                 <p class="h32">ЭЛЕКТРИЧЕСКИЕ <br>
                     КАРНИЗЫ</p>
                 <div class="caption">
                     <p>Мы предлагаем качественные и надежные карнизные системы по вашим размерам, которые позволяют
                         управлять шторами дистанционно. </p>
-                    <button class="btn-outlined">ПОДБРОБНЕЕ</button>
+                    <button class="btn-outlined" data-target="#moreModal" data-toggle="modal">ПОДБРОБНЕЕ</button>
                 </div>
             </div>
-            <div class="col-12 col-md-4 image_block effect eff-1">
+            <div class="col-12 col-md-4 image_block effect eff-9">
                 <p class="h32">ПРОФИЛЬНЫЕ <br>
                     КАРНИЗЫ</p>
                 <div class="caption">
                     <p>Карнизы изготавливаются строго по вашим размерам и пожеланиям. Они достаточно гибкие, поэтому
                         актуальны для окон в виде арок или эркеров. </p>
-                    <button class="btn-outlined">ПОДБРОБНЕЕ</button>
+                    <button class="btn-outlined" data-target="#moreModal" data-toggle="modal">ПОДБРОБНЕЕ</button>
                 </div>
             </div>
-            <div class="col-12 col-md-4 image_block effect eff-1">
+            <div class="col-12 col-md-4 image_block effect eff-9">
                 <p class="h32">МЕТАЛЛИЧЕСКИЕ <br>
                     КАРНИЗЫ</p>
                 <div class="caption">
                     <p>У нас большой ассортимент карнизов под любой стиль интерьера. Карнизы изготавливаются по вашим
                         размерам. Также вы можете сделать заказ по собственному эскизу.</p>
-                    <button class="btn-outlined">ПОДБРОБНЕЕ</button>
+                    <button class="btn-outlined" data-target="#moreModal" data-toggle="modal">ПОДБРОБНЕЕ</button>
                 </div>
             </div>
-            <div class="col-12 col-md-4 image_block effect eff-1">
+            <div class="col-12 col-md-4 image_block effect eff-9">
                 <p class="h32">ТЕКСТИЛЬ <br>
                     ДЛЯ ДОМА</p>
                 <div class="caption">
                     <p>В дополнении к шторам вы можете заказать текстиль для дома: покрывала, декоративные подушки,
                         столовые скатерти и другие виды интерьерного текстиля.</p>
-                    <button class="btn-outlined">ПОДБРОБНЕЕ</button>
+                    <button class="btn-outlined" data-target="#moreModal" data-toggle="modal">ПОДБРОБНЕЕ</button>
                 </div>
             </div>
 
@@ -365,15 +381,17 @@
             <div class="col-1"></div>
             <div class="col-12 col-md-7">
                 <p>Наш специалист приедет к вам в удобное время с большим набором образцов.</p>
+                <form id="needs_validation">
                 <div class="row" style="margin-left: -15px;">
+
                     <div class="col-12 col-md-6 col-xl-4">
-                        <input class=" basic_input" type="text" placeholder="Имя"/>
+                        <input class=" basic_input" type="text" placeholder="Имя" required/>
                     </div>
                     <div class="col-12 col-md-6 col-xl-4">
-                        <input class=" basic_input" type="text" placeholder="Телефон"/>
+                        <input class=" basic_input tel-input" type="text" placeholder="Телефон" data-inputmask="'mask': '+9 (999) 999-99-99'" required/>
                     </div>
                     <div class="col-12 col-md-6 col-xl-4 app-btn">
-                        <button class=" btn-outlined w-100">Оставить заявку</button>
+                        <button class=" btn-outlined w-100" type="submit">Оставить заявку</button>
                     </div>
                     <div class="col-12 d-none">
                         <span class="modal_success-app app-send-desktop">Заявка отправлена.</span>
@@ -381,22 +399,22 @@
 
                 </div>
                 <label class="checking" for="agreement2">
-                    <input id="agreement2" type="checkbox" hidden>
-                    <span></span>
+                    <input id="agreement2" type="checkbox" required>
                     Я даю свое согласие на обработку данных, согласно <a href="Политика%20конфиденциальности.pdf" class="confidetial">политике конфиденциальности</a>.
                 </label>
+                </form>
             </div>
         </div>
     </div>
     <!--activity directions-->
     <div class="col-12 ">
         <div class="row third_main_section">
-            <div class="col-12 col-md-5 mx-auto">
+            <div class="col-12 col-md-5 mx-auto directions">
                 <h2 class="h32 t-c">Заказы любого направления</h2>
                 <p class="t-c mt">От домашних штор до декораций большого зала. <br> Мы с любовью относимся к каждому
                     заказу.</p>
             </div>
-            <div class="w-100"></div>
+            <div class="w-100 mt-20"></div>
             <div class="col-6 col-md-4 col-xl-2 min-properties">
                 <img src="img/forma1@3x.png" width="57" height="43" alt=""><br><span>Частные <br>
 интерьеры</span></div>
@@ -453,103 +471,103 @@
             <div class="col-12">
                 <div id="slider">
                     <ul id="lightSlider">
-                        <li data-thumb="img/slider/slider2.jpg">
+                        <li data-src="img/slider/slider2.jpg">
                             <img src="img/slider/slider2.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider3.jpg">
+                        <li data-src="img/slider/slider3.jpg">
                             <img src="img/slider/slider3.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider4.jpg">
+                        <li data-src="img/slider/slider4.jpg">
                             <img src="img/slider/slider4.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider5.jpg">
+                        <li data-src="img/slider/slider5.jpg">
                             <img src="img/slider/slider5.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider6.jpg">
+                        <li data-src="img/slider/slider6.jpg">
                             <img src="img/slider/slider6.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider7.jpg">
+                        <li data-src="img/slider/slider7.jpg">
                             <img src="img/slider/slider7.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider8.jpg">
+                        <li data-src="img/slider/slider8.jpg">
                             <img src="img/slider/slider8.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider9.jpg">
+                        <li data-src="img/slider/slider9.jpg">
                             <img src="img/slider/slider9.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider11.jpg">
+                        <li data-src="img/slider/slider11.jpg">
                             <img src="img/slider/slider11.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider12.jpg">
+                        <li data-src="img/slider/slider12.jpg">
                             <img src="img/slider/slider12.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider14.jpg">
+                        <li data-src="img/slider/slider14.jpg">
                             <img src="img/slider/slider14.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider15.jpg">
+                        <li data-src="img/slider/slider15.jpg">
                             <img src="img/slider/slider15.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider16.jpg">
+                        <li data-src="img/slider/slider16.jpg">
                             <img src="img/slider/slider16.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider17.jpg">
+                        <li data-src="img/slider/slider17.jpg">
                             <img src="img/slider/slider17.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider18.jpg">
+                        <li data-src="img/slider/slider18.jpg">
                             <img src="img/slider/slider18.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider19.jpg">
+                        <li data-src="img/slider/slider19.jpg">
                             <img src="img/slider/slider19.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider20.jpg">
+                        <li data-src="img/slider/slider20.jpg">
                             <img src="img/slider/slider20.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider22.jpg">
+                        <li data-src="img/slider/slider22.jpg">
                             <img src="img/slider/slider22.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider24.jpg">
+                        <li data-src="img/slider/slider24.jpg">
                             <img src="img/slider/slider24.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider25.jpg">
+                        <li data-src="img/slider/slider25.jpg">
                             <img src="img/slider/slider25.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider27.jpg">
+                        <li data-src="img/slider/slider27.jpg">
                             <img src="img/slider/slider27.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider28.jpg">
+                        <li data-src="img/slider/slider28.jpg">
                             <img src="img/slider/slider28.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider29.jpg">
+                        <li data-src="img/slider/slider29.jpg">
                             <img src="img/slider/slider29.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider30.jpg">
+                        <li data-src="img/slider/slider30.jpg">
                             <img src="img/slider/slider30.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider32.jpg">
+                        <li data-src="img/slider/slider32.jpg">
                             <img src="img/slider/slider32.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider33.jpg">
+                        <li data-src="img/slider/slider33.jpg">
                             <img src="img/slider/slider33.jpg"/>
                         </li>
-                        <li data-thumb="img/slider/slider34.jpg">
+                        <li data-src="img/slider/slider34.jpg">
                             <img src="img/slider/slider34.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider35.jpg">
+                        <li data-src="img/slider/slider35.jpg">
                             <img src="img/slider/slider35.jpg" />
                         </li>
-                        <li data-thumb="img/slider/slider36.JPG">
+                        <li data-src="img/slider/slider36.JPG">
                             <img src="img/slider/slider36.JPG"/>
                         </li>
-                        <li data-thumb="img/slider/slider38.JPG">
+                        <li data-src="img/slider/slider38.JPG">
                             <img src="img/slider/slider38.JPG" />
                         </li>
-                        <li data-thumb="img/slider/slider40.JPG">
+                        <li data-src="img/slider/slider40.JPG">
                             <img src="img/slider/slider40.JPG"/>
                         </li>
-                        <li data-thumb="img/slider/slider41.JPG">
+                        <li data-src="img/slider/slider41.JPG">
                             <img src="img/slider/slider41.JPG" />
                         </li>
-                        <li data-thumb="img/slider/slider43.jpg">
+                        <li data-src="img/slider/slider43.jpg">
                             <img src="img/slider/slider43.jpg"/>
                         </li>
                     </ul>
@@ -745,16 +763,20 @@
                 <p class="footer_text">Для дизайнеров и строительных компаний у нас всегда <br>выгодные условия
                     сотрудничества.</p>
                 <div class="row" style="margin-left: 0px;margin-right: 0px">
-                <input type="text" class="basic_input white t-white" style="width: 40%;margin-right: 20px" placeholder="Телефон">
-                <button class="btn-outlined white app-btn" style="vertical-align: top;width: 50%;font-size: 0.9vw">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
-                    <div class="col-12 d-none">
+                    <form id="needs_validation_footer">
+                <input data-inputmask="'mask': '+9 (999) 999-99-99'" value="7" type="text" class="basic_input white t-white tel-input" style="width: 40%;margin-right: 20px" placeholder="Телефон" required>
+                    <div class="invalid-feedback">
+                        Введите правильный номер телефона
+                    </div>
+                <button class="btn-outlined white app-btn" style="vertical-align: top;width: 50%;font-size: 0.9vw" type="submit">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
+                    <div id="success-app-footer" class="col-12 d-none">
                         <span class="modal_success-app app-send-desktop t-white" style="margin-right: 15px">Заявка отправлена.</span>
                     </div>
                 <label class="checking t-white " for="agreement3" >
-                    <input id="agreement3" type="checkbox" hidden>
-                    <span></span>
+                    <input id="agreement3" type="checkbox" required>
                     Я даю свое согласие на обработку данных, согласно <a href="Политика%20конфиденциальности.pdf" class="confidetial t-white">политике конфиденциальности</a>.
                 </label>
+                    </form>
                 </div>
             </div>
         </div>
@@ -774,21 +796,10 @@
 <script src="js/nouislider.min.js"></script>
 <script src="js/wNumb.js"></script>
 <script src="js/lightslider.js"></script>
-
-<link type="text/css" rel="stylesheet" href="css/lightgallery.css"/>
 <script src="js/lightgallery.js"></script>
 <script src="js/scroll.js"></script>
 <script>
     $(document).ready(function () {
-        $('#lightSlider').lightSlider({
-            autoWidth: true,
-            gallery: false,
-            pager: 0,
-            loop: true,
-            onSliderLoad: function () {
-                $('#autoWidth').removeClass('cS-hidden');
-            }
-        });
     });
 </script>
 <script>
@@ -808,11 +819,89 @@
 
     });
 </script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
 <script src="js/calculator.js"></script>
 <script>
-    $('.app-btn').on('click',function () {
-        $(this).next().toggleClass('d-none');
+    $(":input").inputmask();
+    $('#needs_validation_footer').on('submit',function () {
+        if (!$(this).find('.tel-input').inputmask("isComplete")) {
+            $(this).find('.tel-input').focus();
+            console.log('not valid')
+            return false;
+        }
+        $(this).find('.modal_success-app').parent().removeClass('d-none');
+        var $form = $(this);
+        setTimeout(function () {
+            $form.find('.modal_success-app').parent().addClass('d-none');
+            $form.find('input').prop('checked', false).val('');
+        }, 3000);
+        return false;
+    });
+    $('#needs_validation').on('submit',function () {
+        if (!$(this).find('.tel-input').inputmask("isComplete")) {
+            $(this).find('.tel-input').focus();
+            console.log('not valid')
+            return false;
+        }
+        $(this).find('.modal_success-app').parent().removeClass('d-none');
+        var $form = $(this);
+        setTimeout(function () {
+            $form.find('.modal_success-app').parent().addClass('d-none');
+            $form.find('input').prop('checked', false).val('');
+        }, 3000);
+        return false;
+    });
+    $('#first_section_valid').on('submit',function () {
+        if (!$(this).find('.tel-input').inputmask("isComplete")) {
+            $(this).find('.tel-input').focus();
+            console.log('not valid')
+            return false;
+        }
+        $(this).find('.modal_success-app').parent().removeClass('d-none');
+        var $form = $(this);
+        setTimeout(function () {
+            $form.find('.modal_success-app').parent().addClass('d-none');
+            $form.find('input').prop('checked', false).val('');
+        }, 3000);
+        return false;
+    });
+    $('.modal-form').on('submit',function () {
+        if (!$(this).find('.tel-input').inputmask("isComplete")) {
+            $(this).find('.tel-input').focus();
+            console.log('not valid')
+            return false;
+        }
+        $(this).find('.modal_success-app').parent().removeClass('d-none');
+        var $form = $(this);
+        setTimeout(function () {
+            $form.find('.modal_success-app').parent().addClass('d-none');
+            $form.find('input').prop('checked', false).val('');
+        }, 3000);
+        return false;
     })
+</script>
+<script src="js/lightgallery.min.js"></script>
+<!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="js/lg-thumbnail.min.js"></script>
+<script src="js/lg-fullscreen.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#lightSlider').lightSlider({
+            gallery:true,
+            loop:true,
+            autoWidth:true,
+            thumbItem:9,
+            slideMargin:10,
+            enableDrag: true,
+            currentPagerPosition:'left',
+            onSliderLoad: function(el) {
+                el.lightGallery({
+                    selector: '#lightSlider .lslide'
+                });
+            }
+        });
+    });
 </script>
 </body>
 </html>
