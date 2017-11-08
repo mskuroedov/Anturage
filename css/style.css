@@ -149,7 +149,7 @@ button.close {
 .header_promo {
     background-image: url('../img/mt@3x.png');
     background-size: cover;
-    padding:0;
+    padding: 0;
 }
 
 .header_promo__block {
@@ -245,10 +245,10 @@ button.close {
 }
 
 /*.second_main_section {*/
-    /*padding-top: 72px;*/
-    /*padding-left: 90px;*/
-    /*padding-right: 90px;*/
-    /*margin-bottom: 100px;*/
+/*padding-top: 72px;*/
+/*padding-left: 90px;*/
+/*padding-right: 90px;*/
+/*margin-bottom: 100px;*/
 /*}*/
 
 .second_main_section h3 {
@@ -888,9 +888,11 @@ button.close {
 .calc_parametrs > div > div {
     margin-bottom: 30px;
 }
-.container{
+
+.container {
     padding-right: 0;
 }
+
 @font-face {
     font-family: "Circe";
     src: url('../fonts/circe-regular.ttf') format("truetype");
@@ -912,262 +914,487 @@ button.close {
     font-weight: normal;
 }
 
-
-
-
 @media (max-width: 575px) {
-    .container{
-        max-width:320px;
+
+    .app-send-desktop {
+        float: right;
+        margin-top: -6px;
+        margin-bottom: -10px;
     }
-    .header_promo__block{
+
+    .container {
+        max-width: 320px;
+    }
+
+    .header_promo__block {
         text-align: center;
     }
-    .header_promo__block p{
+
+    .header_promo__block p {
         text-align: center;
     }
-    .second_main_section{
+
+    .second_main_section {
         padding-top: 68px;
-        padding-bottom:73px;
+        padding-bottom: 73px;
     }
-    .second_main_section *{
+
+    .second_main_section * {
         text-align: center;
     }
-    .second_main_section label{
+
+    .second_main_section label {
         text-align: left;
     }
-    .third_main_section{
-        padding-top:68px;
+
+    .third_main_section {
+        padding-top: 68px;
         padding-bottom: 75px;
     }
+
     .third_main_section * {
         text-align: center;
     }
+
     .third_main_section p {
         text-align: center !important;
     }
-    .associate_main_section *{
+
+    .associate_main_section * {
         text-align: center;
     }
-    .image_block{
+
+    .image_block {
         width: 319px;
         height: 213px;
     }
-    .caption{
+
+    .caption {
         padding: 20px;
         padding-top: 20%;
     }
-    .associate_main_section p:nth-of-type(2){
+
+    .associate_main_section p:nth-of-type(2) {
         padding-left: 15px;
-        padding-right:15px;
+        padding-right: 15px;
         margin-top: 39px;
         text-align: center;
     }
-    .associate_main_section h6{
+
+    .associate_main_section h6 {
         text-align: center;
     }
-    #contact{
+
+    #contact {
         text-align: center;
     }
-    .calculator_section{
-        padding:0;
-        padding-top:43px;
+
+    .calculator_section {
+        padding: 0;
+        padding-top: 43px;
         text-align: left !important;
         padding-bottom: 80px;
     }
-    .calc_header_section{
+
+    .calc_header_section {
         margin-bottom: 15px !important;
     }
-    .calculator_section input{
+
+    .calculator_section input {
         margin-left: -15px;
     }
-    .order-3{
+
+    .order-3 {
         margin-bottom: 20px;
     }
+
     .calc_parametrs > div > div {
         margin-bottom: 45px;
         text-align: left;
     }
-    .calculator_option{
+
+    .calculator_option {
         text-align: center;
     }
-    .light-sub_text{
+
+    .light-sub_text {
         text-align: left;
     }
-    .calc_parametrs > div > div > div{
+
+    .calc_parametrs > div > div > div {
         text-align: left;
     }
-    .calculator_header_option + div{
+
+    .calculator_header_option + div {
         margin-bottom: 0px;
     }
-    .sub_text{
+
+    .sub_text {
         text-align: center;
     }
-    .price_section{
-        background:none;
+
+    .price_section {
+        background: none;
         box-shadow: none;
         text-align: center !important;
     }
-    .price_section *{
-        background:none;
+
+    .price_section * {
+        background: none;
         box-shadow: none;
         text-align: center;
     }
-    .footer{
+
+    .footer {
         text-align: center;
     }
-    .footer *{
+
+    .footer * {
         text-align: center;
     }
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
-    .container{
-        max-width:550px;
+
+    .app-send-desktop {
+        float: right;
+        margin-top: -6px;
+        margin-bottom: -10px;
     }
-    .header_promo__block{
+
+    .container {
+        max-width: 484px;
+    }
+
+    .header_promo__block {
         text-align: center;
     }
-    .header_promo__block p{
+
+    .header_promo__block p {
         text-align: center;
     }
-    .second_main_section{
+
+    .second_main_section {
         padding-top: 68px;
-        padding-bottom:73px;
+        padding-bottom: 73px;
     }
-    .second_main_section *{
+
+    .second_main_section * {
         text-align: center;
     }
-    .second_main_section label{
+
+    .second_main_section label {
         text-align: left;
     }
-    .third_main_section{
-        padding-top:68px;
+
+    .third_main_section {
+        padding-top: 68px;
         padding-bottom: 75px;
     }
+
     .third_main_section * {
         text-align: center;
     }
+
     .third_main_section p {
         text-align: center !important;
     }
-    .associate_main_section *{
+
+    .associate_main_section * {
         text-align: center;
     }
-    .image_block{
+
+    .image_block {
         width: 319px;
         height: 213px;
     }
-    .caption{
+
+    .caption {
         padding: 20px;
         padding-top: 20%;
     }
-    .associate_main_section p:nth-of-type(2){
+
+    .associate_main_section p:nth-of-type(2) {
         padding-left: 15px;
-        padding-right:15px;
+        padding-right: 15px;
         margin-top: 39px;
         text-align: center;
     }
-    .associate_main_section h6{
+
+    .associate_main_section h6 {
         text-align: center;
     }
-    #contact{
+
+    #contact {
         text-align: center;
     }
-    .calculator_section{
-        padding:0;
-        padding-top:43px;
+
+    .calculator_section {
+        padding: 0;
+        padding-top: 43px;
         text-align: left !important;
         padding-bottom: 80px;
     }
-    .calc_header_section{
+
+    .calc_header_section {
         margin-bottom: 15px !important;
     }
-    .calculator_section input{
+
+    .calculator_section input {
         margin-left: -15px;
     }
-    .order-3{
+
+    .order-3 {
         margin-bottom: 20px;
     }
+
     .calc_parametrs > div > div {
         margin-bottom: 45px;
         text-align: left;
     }
-    .calculator_option{
+
+    .calculator_option {
         text-align: center;
     }
-    .light-sub_text{
+
+    .light-sub_text {
         text-align: left;
     }
-    .calc_parametrs > div > div > div{
+
+    .calc_parametrs > div > div > div {
         text-align: left;
     }
-    .calculator_header_option + div{
+
+    .calculator_header_option + div {
         margin-bottom: 0px;
     }
-    .sub_text{
+
+    .sub_text {
         text-align: center;
     }
-    .price_section{
-        background:none;
+
+    .price_section {
+        background: none;
         box-shadow: none;
         text-align: center !important;
     }
-    .price_section *{
-        background:none;
+
+    .price_section * {
+        background: none;
         box-shadow: none;
         text-align: center;
     }
-    .footer{
+
+    .footer {
         text-align: center;
     }
-    .footer *{
+
+    .footer * {
         text-align: center;
     }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
-    .container{
-        max-width:768px;
+
+    .app-send-desktop {
+        float: right;
+        margin-top: -6px;
+        margin-bottom: -10px;
+    }
+
+    .container {
+        max-width: 690px;
+    }
+
+    .telephone {
+        margin-right: 10px;
+    }
+
+    .header_promo {
+        padding-top: 90px;
+        padding-left: 21%;
+        padding-bottom: 100px;
+        padding-right: 190px;
+    }
+
+    .second_main_section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .third_main_section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .caption {
+        padding-top: 20%;
+        padding-bottom: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .associate_main_section button {
+        margin-top: 5px;
+    }
+
+    .step-row:after {
+        top: -137px;
+    }
+
+    .footer_third_section {
+        margin-top: 30px;
+        text-align: center;
+        position: relative;
+        left: 15px;
+    }
+
+    .footer_third_section * {
+        text-align: center;
+    }
+    .step-row:after{
+        top:-105px;
+    }
+    .step-row p {    width: 143%;
+        font-family: Circe;
+        font-size: 14px;
+        line-height: 1.25;
+        text-align: center;
+        color: #000000;
+        margin-top: 13px;
+        position: relative;
+        left: -14px;
+    }
+    @media (min-width: 802px) and (max-width: 991px){
+
+        .step-row:after{
+            top:-88px;
+        }
     }
 }
+@media (min-width: 802px) and (max-width: 991px){
 
+    .step-row:after{
+        top:-88px;
+    }
+}
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
-    .container{
-        max-width:940px;
+    .container {
+        max-width: 940px;
+    }
+
+    .app-send-desktop {
+        float: right;
+        margin-top: -6px;
+        margin-bottom: -10px;
+    }
+
+    .telephone {
+        margin-right: 10px;
+    }
+
+    .header_promo {
+        padding-top: 90px;
+        padding-left: 21%;
+        padding-bottom: 100px;
+        padding-right: 80px;
+    }
+
+    .second_main_section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .third_main_section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .caption {
+        padding-top: 20%;
+        padding-bottom: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .associate_main_section button {
+        margin-top: 5px;
+    }
+
+    .step-row:after {
+        top: -88px;
+    }
+    .h22{
+        margin-top:15px;
+    }
+    .price_section .h22{
+        margin-top:0;
+    }
+    .footer_third_section {
+        margin-top: 30px;
+        text-align: center;
+        position: relative;
+        left: 15px;
+    }
+    .footer_third_section button{
+        font-size: 1vw;
+    }
+    .footer_third_section * {
+        text-align: left;
+    }
+    .step-row p {    width: 143%;
+        font-family: Circe;
+        font-size: 14px;
+        line-height: 1.25;
+        text-align: center;
+        color: #000000;
+        margin-top: 13px;
+        position: relative;
+        left: -14px;
+    }
+    @media (min-width: 1074px) and (max-width: 1199px){
+        .step-row:after{
+            top: -71px;
+        }
     }
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    .container{
+    .container {
         max-width: 1170px;
     }
-    .second_main_section{
+
+    .second_main_section {
         padding-top: 72px;
-        padding-bottom:98px;
+        padding-bottom: 98px;
     }
-    .third_main_section{
-        padding-top:74px;
-        padding-bottom:62px;
+
+    .third_main_section {
+        padding-top: 74px;
+        padding-bottom: 62px;
     }
-    .caption{
-        padding-top:55px;
-        padding-left:47px;
-        padding-right:47px;
-        padding-bottom:47px;
+
+    .caption {
+        padding-top: 55px;
+        padding-left: 47px;
+        padding-right: 47px;
+        padding-bottom: 47px;
     }
-    .h30{
+
+    .h30 {
 
         line-height: 1.12;
     }
+
     .header_promo {
         padding-top: 89px;
-        padding-left:117px;
-        padding-right:150px;
-        padding-bottom:150px;
+        padding-left: 117px;
+        padding-right: 150px;
+        padding-bottom: 150px;
     }
 
 }
@@ -1175,8 +1402,8 @@ button.close {
 @media (min-width: 1420px) {
 
     /*.step-row:after {*/
-        /*width: 68%;*/
-        /*left: 19px;*/
+    /*width: 68%;*/
+    /*left: 19px;*/
     /*}*/
 
 }
