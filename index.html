@@ -646,7 +646,7 @@
                                     <input type="text" id="length_carniz-input" class="calculator_input">
                                 </div>
                             </div>
-                            <div class="col-12 calc_header_section">
+                            <div class="col-12 pt-sm-2 calc_header_section">
                                 <span class="calculator_header_option">Количество изделий:</span>
                             </div>
                             <div class="col-12 d-flex flex-wrap">
@@ -662,7 +662,7 @@
                                            onchange="porters.noUiSlider.set(this.value);">
                                 </div>
                             </div>
-                            <div class="col-12 d-flex flex-wrap">
+                            <div class="col-12 pt-sm-2 d-flex flex-wrap">
 
                                 <div class="col-9 col-md-5 order-1"><span
                                     class="calculator_option">Тюль (шт)</span></div>
@@ -675,7 +675,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 calc_header_section">
+                            <div class="col-12 pt-sm-2 calc_header_section">
                                 <button class="calculator_header_option hovered" id="popover" type="button"
                                         data-container="body" data-toggle="popover"
                                         data-placement="top">Коэффициент сборки:
@@ -694,7 +694,7 @@
                                            onchange="porters_kf.noUiSlider.set(this.value);">
                                 </div>
                             </div>
-                            <div class="col-12 d-flex flex-wrap">
+                            <div class="col-12 pt-sm-2 d-flex flex-wrap">
 
                                 <div class="col-9 col-md-5 order-1"><span class="calculator_option">Тюль</span>
                                     <br><span
@@ -707,7 +707,7 @@
                                            onchange="tulle_kf.noUiSlider.set(this.value);">
                                 </div>
                             </div>
-                            <div class="col-12 calc_header_section">
+                            <div class="col-12 pt-sm-2 calc_header_section">
                                 <span class="calculator_header_option">Стоимость ткани:</span>
                             </div>
                             <div class="col-12 d-flex flex-wrap">
@@ -724,7 +724,7 @@
                                            onchange="porters_price.noUiSlider.set(this.value);">
                                 </div>
                             </div>
-                            <div class="col-12 d-flex flex-wrap">
+                            <div class="col-12 pt-sm-2 d-flex flex-wrap">
 
                                 <div class="col-9 col-md-5 order-1"><span
                                     class="calculator_option">Тюль (руб./пог.м)</span><br><span
@@ -977,7 +977,16 @@
             }
         });
     });
+
+    $(document).ready(function() {
+        var $lg = $('#lightgallery');
+        $lg.lightGallery();
+        $lg.on('onAfterOpen.lg', function(){
+            $lg.data('lightGallery').modules.fullscreen.requestFullscreen();
+        });
+    });
 </script>
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
