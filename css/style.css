@@ -927,6 +927,15 @@ button.close {
 
 @media (max-width: 575px) {
 
+    .footer {
+        padding-top: 51px;
+        padding-left:0;
+        padding-right:0;
+        padding-bottom:57px;
+    }
+    .opportunity{
+        margin-bottom:60px;
+    }
     .app-send-desktop {
         float: right;
         margin-top: -6px;
@@ -1067,6 +1076,12 @@ button.close {
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
+    .footer {
+        padding: 48px 50px 78px 74px;
+}
+    .opportunity{
+        margin-bottom:60px;
+    }
 
     .header_promo__block {
         text-align: center;
