@@ -236,7 +236,7 @@
     <!--promo-->
     <div class="col-12 header_promo">
         <div class="row">
-            <div class="col-12 col-md-7 col-lg-6 header_promo__block ">
+            <div class="col-12 col-md-9 col-lg-6 header_promo__block ">
                 <h1>Индивидуальный <br>
                     дизайн и пошив <br>
                     штор «под ключ»</h1>
@@ -744,7 +744,7 @@
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-12">
                         <h4 class="h22">Стоимость изделия:</h4>
-                        <h1 class="h30" id="total_price"></h1>
+                        <h1 class="h30" id="total_price">0 руб.</h1>
                         <p class="sub_text">(расчет выполнен для помещений <br>
                             с высотой до 3 м)</p>
                             </div>
@@ -897,7 +897,11 @@
 <script src="js/jquery.inputmask.bundle.min.js"></script>
 <script src="js/calculator.js"></script>
 <script>
+
     $(":input").inputmask();
+    $('.tel-input').on('hover',function(){
+       return false;
+    });
     $('#needs_validation_footer').on('submit', function () {
         if (!$(this).find('.tel-input').inputmask("isComplete")) {
             $(this).find('.tel-input').focus();

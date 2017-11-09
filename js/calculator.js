@@ -136,11 +136,11 @@ $('.calculator_input').on('update',function () {
     var total_price = ((c1+d1)*b1*a)+((c2+d2)*b2*a);
     $('#total_price').text(total_price + ' руб.');
     if(total_price !== 0 ){
-        $('#total_price').show();
-        $('#total_price').next().show();
+        // $('#total_price').show();
+        // $('#total_price').next().show();
     }else{
-        $('#total_price').next().hide();
-        $('#total_price').hide();
+        // $('#total_price').next().hide();
+        // $('#total_price').hide();
     }
 });
 
