@@ -936,6 +936,12 @@ button.close {
     .opportunity{
         margin-bottom:60px;
     }
+    .opportunity img{
+        margin-bottom:20px;
+    }
+    .opportunity .h22{
+        margin-bottom:20px;
+    }
     .app-send-desktop {
         float: right;
         margin-top: -6px;
@@ -1081,6 +1087,12 @@ button.close {
 }
     .opportunity{
         margin-bottom:60px;
+    }
+    .opportunity img{
+        margin-bottom:20px;
+    }
+    .opportunity .h22{
+        margin-bottom:20px;
     }
 
     .header_promo__block {
@@ -1238,6 +1250,12 @@ button.close {
         margin-bottom: -10px;
     }
 
+    .opportunity img{
+        margin-bottom:10px;
+    }
+    .opportunity .h22{
+        margin-bottom:20px;
+    }
     .container {
         max-width: 690px;
     }
@@ -1331,6 +1349,12 @@ button.close {
         margin-bottom: -10px;
     }
 
+    .opportunity img{
+        margin-bottom:10px;
+    }
+    .opportunity .h22{
+        margin-bottom:20px;
+    }
     .telephone {
         margin-right: 10px;
     }
