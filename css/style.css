@@ -1207,7 +1207,10 @@ button.close {
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .lh-12{
+        margin-top: 15px;
+        line-height: 1.2 !important;
+    }
     .app-send-desktop {
         float: right;
         margin-top: -6px;
@@ -1215,7 +1218,7 @@ button.close {
     }
 
     .container {
-        max-width: 690px;
+        max-width: 690px !;
     }
 
     .telephone {
