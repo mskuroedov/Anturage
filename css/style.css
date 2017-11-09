@@ -164,8 +164,7 @@ button.close {
 
 .header_promo__block {
     padding: 54px 54px 55px 70px;
-    opacity: 0.9;
-    background-color: #818993;
+    background-color: rgba(129, 137, 147,0.9);
     color: white;
 }
 
@@ -940,8 +939,8 @@ button.close {
 
     .header_promo__block {
         text-align: center;
+        background-color: rgba(129, 137, 147,0.7);
     }
-
     .header_promo__block p {
         text-align: center;
     }
@@ -1068,6 +1067,11 @@ button.close {
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
+
+    .header_promo__block {
+        text-align: center;
+        background-color: rgba(129, 137, 147,0.7);
+    }
 
     .app-send-desktop {
         float: right;
