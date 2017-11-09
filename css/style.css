@@ -1380,6 +1380,9 @@ button.close {
     .container {
         max-width: 1170px;
     }
+    .header_promo__block{
+        max-width:436px;
+    }
 
     .second_main_section {
         padding-top: 72px;
